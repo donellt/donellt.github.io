@@ -75,7 +75,7 @@ nav a {
   background-size: 100% 0.2em;
   background-position: bottom;
   transition: all 0.25s ease-in;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 /* header nav link hover effects */
@@ -116,7 +116,7 @@ main {
 .hero-banner h2 {
   background-color: var(--tertiary);
   color: lightgrey;
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 10px 20px;
   font-size: 2rem;
   line-height: 1.2;
@@ -316,6 +316,23 @@ main {
 
   .contact address {
     flex-direction: column;
-    align-items: flex-start;
+  }
+
+  .hero-banner {
+    background-image: url("../images/mobile-background.png"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-banner div {
+    padding-bottom: 10px;
+  }
+
+  .page-section > h2 {
+    text-align: center;
+  }
+
+  .contact address a {
+    text-align: center;
   }
 }
