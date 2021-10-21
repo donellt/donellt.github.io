@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"> </script>
     <title>Donell Torres</title>
 </head>
+
 <body>
     <section id="about-me">
         <nav>
@@ -36,21 +39,92 @@
                 </li>
             </ul>
         </nav>
-        <div>
+        <div class="flex flex-1">
             <div class="about-me-info row">
                 <div class="about-me-info-container">
                     <figure class="about-me-picture-mask">
-                        <img src="./donell-headshot.jpg" alt="Donell Torres" />
+                        <img src="./donell-headshot.jpg" class="about-me-picture" alt="Donell Torres" />
                     </figure>
                     <h1 class="about-me-info-title">
-                        Hey! I'm <span class="text-purple">Donell Torres</span> 👋
+                        Hey! I'm <span class="text-green">Donell Torres</span> 👋
                     </h1>
                     <p class="about-me-info-para">
-                        I'm a <strong class="text-purple">Frontend Web Developer</strong> with over two years of experience in developing responsive and search engine optimized mobile/web applications with innovative user experiences and a passion for growth and learning. 
+                        I'm a <strong class="text-green">Frontend Web Developer</strong> with over two years of
+                        experience in developing responsive and search engine optimized mobile/web applications with
+                        innovative user experiences and a passion for growth and learning.
                     </p>
+                    <div class="about-me-links">
+                        <a href="https://www.linkedin.com/in/donell-torres-9aa4a9159" class="about-me-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/donellt" class="about-me-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:donelltorres@yahoo.com" class="about-me-link">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                        <a href="https://docs.google.com/document/d/19BsoAyYoPuWVuD6HBL_Hj9oLWKrXO-soXVtTswWaIYk/edit?usp=sharing" class="about-me-link">
+                            <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+                <figure class="about-me-img-container">
+                    <img src="./web-developer.svg" class="about-me-img" alt="web developer illustration">
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section id="languages">
+        <div class="container">
+            <div class="row">
+                <h1 class="section-title">This is my <span class="text-green">technology stack</span></h1>
+                <div class="language-list">
+                    <!-- HTML5 -->
+                    <div class="language"> 
+                        <figure class="language-img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Devicon-html5-plain.svg" class="language-img" alt="">
+
+                            <span class="language-name">HTML5</span>
+                    </div>
+                    <!-- CSS3 -->
+                    <div class="language">
+                        <figure class="language-img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/640px-CSS3_logo.svg.png" class="language-img" alt="">
+
+                            <span class="language-name">CSS3</span>
+                    </div>
+                    <!-- JavaScript -->
+                    <div class="language">
+                        <figure class="language-img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Javascript_Logo.png/640px-Javascript_Logo.png" class="language-img" alt="">
+
+                            <span class="language-name">JavaScript</span>
+                    </div>
+                    <!-- WordPress -->
+                    <div class="language">
+                        <figure class="language-img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Wordpress1.png/640px-Wordpress1.png" class="language-img" alt="">
+
+                            <span class="language-name">WordPress</span>
+                    </div>
+                    <!-- React -->
+                    <div class="language">
+                        <figure class="language-img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/768px-React.svg.png" class="language-img" alt="">
+
+                            <span class="language-name">React.js</span>
+                    </div>
+                    <!-- Node.js -->
+                    <div class="language">
+                        <figure class="language-img-wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Node.js_logo_2015.svg/640px-Node.js_logo_2015.svg.png" class="language-img" alt="">
+
+                            <span class="language-name">Node.js</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </body>
+
 </html>
