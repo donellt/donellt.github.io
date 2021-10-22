@@ -22,6 +22,10 @@ p {
     font-size: 16px;
 }
 
+a {
+    text-decoration: none;
+}
+
 li {
     list-style-type: none;
 }
@@ -35,7 +39,7 @@ section:nth-child(even) {
 }
 
 .text-green {
-    color: #00a642;
+    color: #00a642 !important;
 }
 
 .flex {
@@ -74,7 +78,6 @@ nav {
 
 .nav-link-anchor {
     margin: 0 12px;
-    text-decoration: none;
     font-size: 16px;
     color: #242424;
     font-weight: 600;
@@ -94,7 +97,6 @@ nav {
 
 .name-logo {
     font-size: 24px;
-    color: #00a642;
     margin: 0 12px;
     font-weight: bold;
 }
@@ -146,7 +148,6 @@ nav {
 .about-me-link {
     font-size: 20px;
     color: black;
-    text-decoration: none;
     padding: 0 16px;
 }
 
@@ -209,6 +210,14 @@ nav {
 }
 
 /* Projects */
+
+.project {
+    margin-bottom: 135px;
+}
+
+.project:last-child {
+    margin-bottom: 40px;
+}
 
 .project-img {
     width: 100%;
@@ -276,11 +285,62 @@ nav {
 .project-description-link {
     font-size: 20px;
     margin-right: 16px;
-    text-decoration: none;
 }
 
 .project-description-title, .project-description-subtitle, .project-description-para, .project-description-link {
     text-align: left;
     color: white;
 
+}
+
+/* Footer */
+
+footer {
+    background-color: #242424;
+}
+
+.footer-logo-name {
+    text-align: center;
+    color: white;
+}
+
+.footer-row {
+    padding: 4% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-link, .footer-copyright, .footer-logo-popup {
+    color: white;
+
+}
+
+.footer-social-links {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.footer-logo-popup {
+    position: absolute; 
+    right: 0;
+    top: 6px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+    font-size: 16px;
+}
+
+.footer-anchor {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.footer-anchor:hover .footer-logo-popup {
+    transform: translateX(60px);
+    opacity: 1;
 }
