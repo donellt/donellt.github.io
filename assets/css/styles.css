@@ -25,6 +25,16 @@ p {
 a {
     text-decoration: none;
     position: relative;
+    transition: opacity 300ms ease;
+}
+
+i {
+    transition: all 300ms ease;
+}
+
+i:hover {
+    color: #00a642 !important;
+    transform: scale(1.1);
 }
 
 .link-hover-effect:after {
@@ -229,6 +239,22 @@ nav {
     }
 }
 
+.wave {
+    display: inline-block;
+    animation: animate-wave 500ms infinite ease-in-out;
+}
+
+@keyframes animate-wave {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
 /* Tech Stack */
 
 .language-img {
@@ -267,7 +293,7 @@ nav {
 
 .language-name {
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     transform: scale(0);
     transition: all 300ms ease;
 }
@@ -324,7 +350,7 @@ nav {
 }
 
 .project-list {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .project:hover .project-description {
@@ -447,6 +473,18 @@ footer {
 @media (max-width: 480px) {
     .nav-link:not(:last-child) {
         display: none;
+    }
+
+    .about-me-info-para {
+        padding: 0px 10px;
+    }
+
+    .project {
+        margin-bottom: 100px;
+    }
+
+    .project-wrapper {
+        box-shadow: 0 30px 30px rgba(0, 0, 0, .45);
     }
 
     .project-description-para {
