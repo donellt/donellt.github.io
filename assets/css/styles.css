@@ -293,7 +293,7 @@ nav {
 
 .language-name {
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     transform: scale(0);
     transition: all 300ms ease;
 }
@@ -479,6 +479,10 @@ footer {
         padding: 0px 10px;
     }
 
+    .language-name {
+        bottom: -10px;
+    }
+
     .project {
         margin-bottom: 100px;
     }
@@ -520,7 +524,4 @@ footer {
     .footer-row {
         padding: 4% 0;
     }
-
-
-
 }
